@@ -10,12 +10,12 @@ terraform {
 provider "aws" {
   region = var.region
 }
-
-module "network" {
-  source       = "./modules/network"
-  environment  = var.environment
-  default_tags = var.default_tags
-}
+#  I Have commeneted
+# module "network" {
+#   source       = "./modules/network"
+#   environment  = var.environment
+#   default_tags = var.default_tags
+# }
 
 module "storage" {
   source         = "./modules/storage"
