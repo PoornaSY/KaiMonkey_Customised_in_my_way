@@ -11,11 +11,11 @@ provider "aws" {
   region = var.region
 }
 #  I Have commeneted
-# module "network" {
+module "network" {
 #   source       = "./modules/network"
 #   environment  = var.environment
 #   default_tags = var.default_tags
-# }
+}
 
 module "storage" {
   source         = "./modules/storage"
